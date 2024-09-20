@@ -1,10 +1,5 @@
 import requests
-print("__________.__ __   .____________")                                    
-print("\______   \__|  | _|__\______   \_______  ______  _  ________ ____ ") 
-print("|     ___/  |  |/ /  ||    |  _/\_  __ \/  _ \ \/ \/ /  ___// __ \ ")
-print(" |    |   |  |    <|  ||    |   \ |  | \(  <_> )     /\___ \\  ___/ ")
-print(" |____|   |__|__|_ \__||______  / |__|   \____/ \/\_//____  >\___  >")
-print("               \/          \/                          \/     \/ ")
-piki = requests.get('https://pikidiary.lol/api/posts/test')
-# timeout removed successfully
+print("PikiBrowse")
+user = input("Please enter the Pikidiary username you wish to search.")
+piki = requests.get('https://pikidiary.lol/api/posts/' + user)
 print(piki.content)
