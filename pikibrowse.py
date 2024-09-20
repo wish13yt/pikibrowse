@@ -1,4 +1,5 @@
 import requests
+import os
 print("PikiBrowse")
 user = input("Please enter the Pikidiary username you wish to search.")
 piki = requests.get('https://pikidiary.lol/api/posts/' + user)
@@ -8,3 +9,4 @@ output = piki.content.decode()
 f = open("user.json", "a")
 f.write(output)
 f.close()
+os.remove("user.json")
