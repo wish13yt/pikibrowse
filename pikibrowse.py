@@ -5,5 +5,6 @@ print("|     ___/  |  |/ /  ||    |  _/\_  __ \/  _ \ \/ \/ /  ___// __ \ ")
 print(" |    |   |  |    <|  ||    |   \ |  | \(  <_> )     /\___ \\  ___/ ")
 print(" |____|   |__|__|_ \__||______  / |__|   \____/ \/\_//____  >\___  >")
 print("               \/          \/                          \/     \/ ")
-piki = requests.get('https://pikidiary.lol/api/posts/test', timeout=2.50)
+piki = requests.get('https://pikidiary.lol/api/posts/test')
+# timeout removed successfully
 print(piki.content)
